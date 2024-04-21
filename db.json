@@ -1,0 +1,110 @@
+{
+    "creators": [
+        {
+            "id": 1,
+            "name": "Vusal Valiyev",
+            "image": "https://kofe.al/storage/images/users/65c8c6ed8d403.jpeg",
+            "title": "TikTok-da oyun yayinlari açaraq taninan biri.",
+            "detail": "119 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 2,
+            "name": "Togrul Alekberov",
+            "image": "https://kofe.al/storage/images/users/65d7377a20176.JPG",
+            "title": "Insan inkisafcisi",
+            "detail": "58 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 3,
+            "name": "Chene Podcast",
+            "image": "https://kofe.al/storage/images/users/65f6e1d18783f.jpg",
+            "title": "Chene Podcast",
+            "detail": "19 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png",
+            "socialYoutube": "https://www.iconpacks.net/icons/1/free-youtube-icon-105-thumb.png",
+            "socialInstagram": "https://cdn-icons-png.flaticon.com/512/3741/3741664.png"
+        },
+        {
+            "id": 4,
+            "name": "Rehim Alxazov",
+            "image": "https://kofe.al/storage/images/users/65f6e1d18783f.jpg",
+            "title": "TikTokda yayimcilig edib Pubg Mobile Oynuyuram",
+            "detail": "8 Supporter",
+            "socialTiktok": "https://cdn-icons-png.flaticon.com/512/3741/3741700.png",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 5,
+            "name": "Ellada Aliyeva",
+            "image": "https://kofe.al/storage/images/users/661141e9abbb7.jpg",
+            "title": "Youtuber",
+            "detail": "6 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 6,
+            "name": "REZITONE",
+            "image": "https://kofe.al/storage/images/users/6622789a28d18.jpg",
+            "title": "Entertainment / Music",
+            "detail": "2 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png",
+            "socialInstagram": "https://cdn-icons-png.flaticon.com/512/3741/3741664.png"
+        },
+        {
+            "id": 7,
+            "name": "Mehemmed Mehdiyev",
+            "image": "https://kofe.al/storage/images/users/660a6b15dc3a0.jpg",
+            "title": "Editor",
+            "detail": "1 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 8,
+            "name": "Kamran Aliyev",
+            "image": "https://kofe.al/storage/images/users/6612f871ee8b9.jpg",
+            "title": "Yayinci",
+            "detail": "2 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 9,
+            "name": "Couple traveller influencer",
+            "image": "https://kofe.al/storage/images/users/D5EiUEWH68Cts3WCCe5VhzuJYqU09LpfKvAuiBAA.jpg",
+            "title": "Evsiz Seyyahlar",
+            "detail": "54 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png",
+            "socialInstagram": "https://cdn-icons-png.flaticon.com/512/3741/3741664.png",
+            "socialYoutube": "https://www.iconpacks.net/icons/1/free-youtube-icon-105-thumb.png"
+        },
+        {
+            "id": 10,
+            "name": "Turkan Ismayilli",
+            "image": "https://kofe.al/storage/images/users/64cd3091e8246.png",
+            "title": "Autizm sindromlu uşaqlar üçün Animasiya kanali",
+            "detail": "22 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png",
+            "socialInstagram": "https://cdn-icons-png.flaticon.com/512/3741/3741664.png",
+            "socialYoutube": "https://www.iconpacks.net/icons/1/free-youtube-icon-105-thumb.png"
+        },
+        {
+            "id": 11,
+            "name": "Ahu Kamranli",
+            "image": "https://kofe.al/storage/images/users/65d9b8b8e91d0.jpeg",
+            "title": "Gezen, arasdiran, paylasan",
+            "detail": "57 Supporter",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png"
+        },
+        {
+            "id": 12,
+            "name": "Sabir Memmedov",
+            "image": "https://kofe.al/storage/images/users/65ed42876d3f9.jpeg",
+            "title": "Yayinci",
+            "detail": "69 Supporter",
+            "socialTiktok": "https://cdn-icons-png.flaticon.com/512/3741/3741700.png",
+            "socialGlobe": "https://cdn-icons-png.flaticon.com/512/900/900782.png",
+            "socialYoutube": "https://www.iconpacks.net/icons/1/free-youtube-icon-105-thumb.png"
+        }
+    ]
+}
