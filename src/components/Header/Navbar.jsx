@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css"
 import "./Navbar.scss"
 import { FiFacebook } from "react-icons/fi";
@@ -6,11 +6,29 @@ import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [showHeader, setShowHeader] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            if (scrollY > 250 || scrollY < 50) {
+                setShowHeader(true);
+            } else {
+                setShowHeader(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <header className={`flex w-full rounded-lg justify-center border items-center bg-[#ffffff] dark:bg-dark relative z-10`}>
-            <div className="container">
-                <div className="flex items-center justify-between">
+        <header className={`flex w-full rounded-lg justify-center items-center bg-[#ffffff] dark:bg-dark relative z-10`}>
+            <div className={`sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] fixed top-0 w-full rounded-lg justify-center border items-center bg-[#ffffff] dark:bg-dark  z-10 ${showHeader ? "" : "hidden"
+                }`}>
+                <div className="flex items-center justify-between ">
                     <div className="w-60 max-w-full">
                         <a href="/#" className="block w-full py-5">
                             <img
@@ -49,7 +67,7 @@ const Navbar = () => {
                                     </div>
                                     <p className="text-gray-500 my-3 lg:hidden">Do what you love, gain support from your audience!</p>
                                     <div className="lg:hidden">
-                                        <ListItem NavLink="/">Creator</ListItem>
+                                        <ListItem NavLink="/creators">Creator</ListItem>
                                     </div>
                                     <hr />
                                     <div className="lg:hidden">
@@ -88,7 +106,7 @@ const Navbar = () => {
                             </nav>
                         </div>
                         <div className="list-none hidden lg:flex">
-                            <ListItem NavLink="/">Creator</ListItem>
+                            <ListItem NavLink="/creators">Creator</ListItem>
                             <ListItem NavLink="/blog">Blog</ListItem>
                             <ListItem NavLink="/faq">FAQ</ListItem>
                         </div>
