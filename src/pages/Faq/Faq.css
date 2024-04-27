@@ -1,0 +1,4 @@
+.faq-background {
+    background: rgb(91, 115, 241);
+    background: linear-gradient(39deg, rgba(91, 115, 241, 1) 0%, rgba(145, 141, 232, 1) 19%, rgba(220, 205, 248, 1) 48%, rgba(231, 205, 248, 1) 63%, rgba(239, 219, 252, 1) 106%);
+}

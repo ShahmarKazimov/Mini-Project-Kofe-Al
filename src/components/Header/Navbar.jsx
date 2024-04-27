@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <header className={`flex w-full rounded-lg justify-center items-center bg-[#ffffff] dark:bg-dark relative z-10`}>
-            <div className={`sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] fixed top-0 w-full rounded-lg justify-center border items-center bg-[#ffffff] dark:bg-dark  z-10 ${showHeader ? "" : "hidden"
+            <div className={`sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] fixed top-0 w-full rounded-lg justify-center border items-center bg-[#ffffff] dark:bg-dark  z-10 ${showHeader ? "" : "hidden-temporary"
                 }`}>
                 <div className="flex items-center justify-between ">
                     <div className="w-60 max-w-full">

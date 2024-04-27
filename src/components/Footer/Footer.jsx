@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import "./Footer.scss"
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font ">
+    <footer className="text-gray-600 body-font">
       <div className=" mb-24 justify-between gap-5 flex-col md:flex md:items-center lg:items-center  md:flex-row md:flex-nowrap flex-wrap">
         <div className="w-64 flex flex-col justify-between md:mx-0 mx-auto text-center md:text-left">
           <a href="/#" className="block w-full mb-5">
