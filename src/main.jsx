@@ -7,8 +7,10 @@ import HomePage from './pages/HomePage/HomePage.jsx'
 import Blog from './pages/Blog/Blog.jsx'
 import Faq from './pages/Faq/Faq.jsx'
 import { DataProvider } from './Context/DataContext.jsx';
-import Creators from './pages/Creators/Creators.jsx'
-
+import Creators from './pages/Creators/Creators.jsx';
+import DetailPage from './pages/Creators/DetailPage/DetailPage.jsx'
+import { DataContext } from './Context/DataContext.jsx'
+import db from '../db.json';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,7 +32,12 @@ const router = createBrowserRouter([
         path: "/faq",
         element: <Faq />
       },
-    ]
+      {
+        path: "/detail/:id",
+        element:< DetailPage creators={ db.creators } />
+      },
+
+]
   }
 
 ])

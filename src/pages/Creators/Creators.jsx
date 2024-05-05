@@ -3,8 +3,9 @@ import axios from 'axios';
 import { DataContext } from '../../Context/DataContext';
 import "./Creators.css"
 import debounce from 'debounce';
+import { Link } from 'react-router-dom';
 
-const Homepage = () => {
+const Creators = () => {
   const creators = useContext(DataContext);
   const [searchItem, setSearchItem] = useState('');
   const [filteredUsers, setFilteredUsers] = useState([]);
@@ -73,43 +74,47 @@ const Homepage = () => {
               <p>User not found</p>
             ) : (
               filteredUsers.length === 0 ? creators.map(creator => (
-                <div key={creator.id} className="hover:translate-y-[-15px] transition-transform duration-300 ease-in-out border shadow-md w-full bg-white rounded-lg  flex flex-col justify-between items-center">
-                  <div>
-                    <div className='relative -top-[75px]'>
-                      <img className="mx-auto border-[5px] border-[#E5E2EE] object-center object-cover rounded-full h-36 w-36 cursor-pointer" src={creator.image} alt="photo" />
-                    </div>
-                    <div className="text-center relative -top-[50px] flex gap-2 flex-col mx-1">
-                      <p className="text-xl text-gray-700 font-bold cursor-pointer">{creator.name}</p>
-                      <p className="text-[19px] creator-text-color font-semibold cursor-pointer">{creator.title}</p>
-                      <p className="text-[19px]  font-semibold cursor-pointer">{creator.detail}</p>
-                      <div className='flex justify-center gap-3 items-center mt-5 -mb-7'>
-                        {creator.socialTiktok && <img className="w-5  font-semibold cursor-pointer" src={creator.socialTiktok} alt="Tiktok Icon" />}
-                        {creator.socialInstagram && <img className="w-5  font-semibold cursor-pointer" src={creator.socialInstagram} alt="Instagram Icon" />}
-                        {creator.socialYoutube && <img className="w-5  font-semibold cursor-pointer" src={creator.socialYoutube} alt="YouTube Icon" />}
-                        <img className="cursor-pointer w-4 h-4  font-semibold" src={creator.socialGlobe} />
+                <Link key={creator.id} to={`/detail/${creator.id}`}>
+                  <div className="hover:translate-y-[-15px] transition-transform duration-300 ease-in-out border shadow-md w-full bg-white rounded-lg  flex flex-col justify-between items-center">
+                    <div>
+                      <div className='relative -top-[75px]'>
+                        <img className="mx-auto border-[5px] border-[#E5E2EE] object-center object-cover rounded-full h-36 w-36 cursor-pointer" src={creator.image} alt="photo" />
+                      </div>
+                      <div className="text-center relative -top-[50px] flex gap-2 flex-col mx-1">
+                        <p className="text-xl text-gray-700 font-bold cursor-pointer">{creator.name}</p>
+                        <p className="text-[19px] creator-text-color font-semibold cursor-pointer">{creator.title}</p>
+                        <p className="text-[19px]  font-semibold cursor-pointer">{creator.detail}</p>
+                        <div className='flex justify-center gap-3 items-center mt-5 -mb-7'>
+                          {creator.socialTiktok && <img className="w-5  font-semibold cursor-pointer" src={creator.socialTiktok} alt="Tiktok Icon" />}
+                          {creator.socialInstagram && <img className="w-5  font-semibold cursor-pointer" src={creator.socialInstagram} alt="Instagram Icon" />}
+                          {creator.socialYoutube && <img className="w-5  font-semibold cursor-pointer" src={creator.socialYoutube} alt="YouTube Icon" />}
+                          <img className="cursor-pointer w-4 h-4  font-semibold" src={creator.socialGlobe} />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               )) : filteredUsers.map(creator => (
-                <div key={creator.id} className="hover:translate-y-[-15px] transition-transform duration-300 ease-in-out border shadow-md w-full bg-white rounded-lg  flex flex-col justify-between items-center">
-                  <div>
-                    <div className='relative -top-[75px]'>
-                      <img className="mx-auto border-[5px] border-[#E5E2EE] object-center object-cover rounded-full h-36 w-36 cursor-pointer" src={creator.image} alt="photo" />
-                    </div>
-                    <div className="text-center relative -top-[50px] flex gap-2 flex-col mx-1">
-                      <p className="text-xl text-gray-700 font-bold cursor-pointer">{creator.name}</p>
-                      <p className="text-[19px] creator-text-color font-semibold cursor-pointer">{creator.title}</p>
-                      <p className="text-[19px]  font-semibold cursor-pointer">{creator.detail}</p>
-                      <div className='flex justify-center gap-3 items-center mt-5 -mb-7'>
-                        {creator.socialTiktok && <img className="w-5  font-semibold cursor-pointer" src={creator.socialTiktok} alt="Tiktok Icon" />}
-                        {creator.socialInstagram && <img className="w-5  font-semibold cursor-pointer" src={creator.socialInstagram} alt="Instagram Icon" />}
-                        {creator.socialYoutube && <img className="w-5  font-semibold cursor-pointer" src={creator.socialYoutube} alt="YouTube Icon" />}
-                        <img className="cursor-pointer w-4 h-4  font-semibold" src={creator.socialGlobe} />
+                <Link key={creator.id} to={`/detail/${creator.id}`}>
+                  <div className="hover:translate-y-[-15px] transition-transform duration-300 ease-in-out border shadow-md w-full bg-white rounded-lg  flex flex-col justify-between items-center">
+                    <div>
+                      <div className='relative -top-[75px]'>
+                        <img className="mx-auto border-[5px] border-[#E5E2EE] object-center object-cover rounded-full h-36 w-36 cursor-pointer" src={creator.image} alt="photo" />
+                      </div>
+                      <div className="text-center relative -top-[50px] flex gap-2 flex-col mx-1">
+                        <p className="text-xl text-gray-700 font-bold cursor-pointer">{creator.name}</p>
+                        <p className="text-[19px] creator-text-color font-semibold cursor-pointer">{creator.title}</p>
+                        <p className="text-[19px]  font-semibold cursor-pointer">{creator.detail}</p>
+                        <div className='flex justify-center gap-3 items-center mt-5 -mb-7'>
+                          {creator.socialTiktok && <img className="w-5  font-semibold cursor-pointer" src={creator.socialTiktok} alt="Tiktok Icon" />}
+                          {creator.socialInstagram && <img className="w-5  font-semibold cursor-pointer" src={creator.socialInstagram} alt="Instagram Icon" />}
+                          {creator.socialYoutube && <img className="w-5  font-semibold cursor-pointer" src={creator.socialYoutube} alt="YouTube Icon" />}
+                          <img className="cursor-pointer w-4 h-4  font-semibold" src={creator.socialGlobe} />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))
             )}
           </div>
@@ -119,4 +124,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage;
+export default Creators;
